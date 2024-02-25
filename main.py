@@ -72,7 +72,7 @@ async def root():
 async def say_hello(patient_info: PatientInfo):
     patient_info_dict = patient_info.dict()
     # use GaussianNB model
-    with open('./ml_model/model_8.pkl', 'rb') as file:
+    with open('./ml_model/model_GaussianNB.pkl', 'rb') as file:
         loaded_model = pickle.load(file)
         # Format the data into two-dimensional data in the agreed order.
         # If necessary, you can discard some fields that are not helpful for prediction.
