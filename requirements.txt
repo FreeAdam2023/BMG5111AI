@@ -1,10 +1,5 @@
-accelerate
-bitsandbytes
 fastapi
 uvicorn
-langchain
-mysql-connector-python
-python-dotenv
 eli5
 catboost
 lightgbm
