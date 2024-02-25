@@ -70,7 +70,7 @@ async def root():
 
 @app.post("/predict/")
 async def say_hello(patient_info: PatientInfo):
-    patient_info_dict = patient_info.dict()
+    patient_info_dict = {k.lower(): v for k, v in patient_info.dict().items()}
     # use GaussianNB model
     with open('./ml_model/model_GaussianNB.pkl', 'rb') as file:
         loaded_model = pickle.load(file)
