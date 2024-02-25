@@ -5,7 +5,6 @@ uvicorn
 langchain
 mysql-connector-python
 python-dotenv
-git+https://github.com/huggingface/transformers.git@main
 eli5
 catboost
 lightgbm
