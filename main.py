@@ -18,7 +18,6 @@ app.add_middleware(
 class PatientInfo(BaseModel):
     gender: int
     age: int = None
-    schooling: int
     breastfeeding: int = None
     varicella: int = None
     initial_symptom: int = None
